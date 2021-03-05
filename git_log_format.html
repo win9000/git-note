@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <link href="style.css?t=15:45" rel="stylesheet">
+        <title>git log 选项说明</title>
+
+    </head>
+
+    <body>
+
+         
+
+        <table id="pretty_format" >
+            <caption >Table 1. <code>git log --pretty=format</code> 常用的选项</caption>
+            <colgroup>
+            <col style="width: 20%;">
+            <col style="width: 80%;">
+            </colgroup>
+            <thead>
+            <tr>
+            <th >选项</th>
+            <th >说明</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td ><p  ><code>%H</code></p></td>
+            <td ><p  >提交的完整哈希值</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%h</code></p></td>
+            <td ><p  >提交的简写哈希值</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%T</code></p></td>
+            <td ><p  >树的完整哈希值</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%t</code></p></td>
+            <td ><p  >树的简写哈希值</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%P</code></p></td>
+            <td ><p  >父提交的完整哈希值</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%p</code></p></td>
+            <td ><p  >父提交的简写哈希值</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%an</code></p></td>
+            <td ><p  >作者名字</p>(作者是作出修改的人)</td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%ae</code></p></td>
+            <td ><p  >作者的电子邮件地址</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%ad</code></p></td>
+            <td ><p  >作者修订日期（可以用 --date=选项 来定制格式）</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%ar</code></p></td>
+            <td ><p  >作者修订日期，按多久以前的方式显示</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%cn</code></p></td>
+            <td ><p  >提交者的名字(将修改提交的人，项目负责人之类的)</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%ce</code></p></td>
+            <td ><p  >提交者的电子邮件地址</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%cd</code></p></td>
+            <td ><p  >提交日期</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%cr</code></p></td>
+            <td ><p  >提交日期（距今多长时间）</p></td>
+            </tr>
+            <tr>
+            <td ><p  ><code>%s</code></p></td>
+            <td ><p  >提交说明</p></td>
+            </tr>
+            </tbody>
+        </table>
+<p></p>       
+        <table>       
+        <caption >Table 2. <code>git log</code> 的常用选项</caption>
+        <colgroup>
+        <col style="width: 20%;">
+        <col style="width: 80%;">
+        </colgroup>
+        <thead>
+        <tr>
+        <th >选项</th>
+        <th >说明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td ><p ><code>-p</code></p></td>
+        <td ><p >按补丁格式显示每个提交引入的差异。</p></td>
+        </tr>
+        <tr>
+        <td ><p ><code>--stat</code></p></td>
+        <td ><p >显示每次提交的文件修改统计信息。</p></td>
+        </tr>
+        <tr>
+        <td ><p ><code>--shortstat</code></p></td>
+        <td ><p >只显示 --stat 中最后的行数修改添加移除统计。</p></td>
+        </tr>
+        <tr>
+        <td ><p ><code>--name-only</code></p></td>
+        <td ><p >仅在提交信息后显示已修改的文件清单。</p></td>
+        </tr>
+        <tr>
+        <td ><p ><code>--name-status</code></p></td>
+        <td ><p >显示新增、修改、删除的文件清单。</p></td>
+        </tr>
+        <tr>
+        <td ><p ><code>--abbrev-commit</code></p></td>
+        <td ><p >仅显示 SHA-1 校验和所有 40 个字符中的前几个字符。</p></td>
+        </tr>
+        <tr>
+        <td ><p ><code>--relative-date</code></p></td>
+        <td ><p >使用较短的相对时间而不是完整格式显示日期（比如“2 weeks ago”）。</p></td>
+        </tr>
+        <tr>
+        <td ><p ><code>--graph</code></p></td>
+        <td ><p >在日志旁以 ASCII 图形显示分支与合并历史。</p></td>
+        </tr>
+        <tr>
+        <td ><p ><code>--pretty</code></p></td>
+        <td ><p >使用其他格式显示历史提交信息。可用的选项包括 oneline、short、full、fuller 和 format（用来定义自己的格式）。</p></td>
+        </tr>
+        <tr>
+        <td ><p ><code>--oneline</code></p></td>
+        <td ><p ><code>--pretty=oneline --abbrev-commit</code> 合用的简写。</p></td>
+        </tr>
+        </tbody>
+        </table>
+<p></p>
+        <table id="limit_options" >
+            <caption >Table 3. 限制 <code>git log</code> 输出的选项</caption>
+            <colgroup>
+            <col style="width: 33.3333%;">
+            <col style="width: 66.6667%;">
+            </colgroup>
+            <thead>
+            <tr>
+            <th  >选项</th>
+            <th  >说明</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td  ><p  ><code>-&lt;n&gt;</code></p></td>
+            <td  ><p  >仅显示最近的 n 条提交。</p></td>
+            </tr>
+            <tr>
+            <td  ><p  ><code>--since</code>, <code>--after</code></p></td>
+            <td  ><p  >仅显示指定时间之后的提交。</p></td>
+            </tr>
+            <tr>
+            <td  ><p  ><code>--until</code>, <code>--before</code></p></td>
+            <td  ><p  >仅显示指定时间之前的提交。</p></td>
+            </tr>
+            <tr>
+            <td  ><p  ><code>--author</code></p></td>
+            <td  ><p  >仅显示作者匹配指定字符串的提交。</p></td>
+            </tr>
+            <tr>
+            <td  ><p  ><code>--committer</code></p></td>
+            <td  ><p  >仅显示提交者匹配指定字符串的提交。</p></td>
+            </tr>
+            <tr>
+            <td  ><p  ><code>--grep</code></p></td>
+            <td  ><p  >仅显示提交说明中包含指定字符串的提交。</p></td>
+            </tr>
+            <tr>
+            <td  ><p  ><code>-S</code></p></td>
+            <td  ><p  >仅显示添加或删除内容匹配指定字符串的提交。</p></td>
+            </tr>
+            </tbody>
+            </table>
+
+            <note>隐藏合并提交</note>按照你代码仓库的工作流程，记录中可能有为数不少的合并提交，它们所包含的信息通常并不多。 为了避免显示的合并提交弄乱历史记录，可以为 log 加上 --no-merges 选项。<br />
+            <note>-S</note>,它接受一个字符串参数,显示那些添加或删除了该字符串的提交
+    </body>
+</html>
